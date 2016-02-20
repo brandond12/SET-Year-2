@@ -1,0 +1,38 @@
+test
+testing
+Names
+Jennifer
+A name that is too long
+nathan
+james
+trees 
+other length
+not test
+hello
+world
+all the things
+more tests
+larg hash
+missing data
+larg table
+more things
+not testing
+none of the things
+less things
+tables
+chairs
+apples
+bananas
+oats
+cars trucks
+people
+.
+hello
+pinapple
+larg table
+trees
+A name that is too long
+test
+world
+mike
+.

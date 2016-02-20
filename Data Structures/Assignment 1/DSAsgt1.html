@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head></head><body>
+
+
+
+
+
+
+
+<h1>DS Assignment #1</h1>
+<p>Write a program that searches  directories for MP3 files and displays information about them.</p>
+<h2>Functional Requirements</h2>
+<ul>
+  <li>The directories to be searched will be found as the  arguments on the command line.</li>
+  <ul>
+    <li>      Your program must display a usage error (display exactly &quot;Error: Usage: dsA1 &lt;directory ...&gt;&quot;) and exit cleanly if there is not at least one argument on the command line.</li>
+    <li>Each argument might or might not end in a backslash. Your program must work with either case.</li>
+    <li>Each argument will not contain wildcards.</li>
+    <li>Valid directory examples:  g:\tmp, v:\tmp\mp3, ., \,&#160;c:, v:\tmp\mp3\</li>
+    <li>You don&#39;t have to worry about whether or not the directory exists or if there are any files in it. FindFirstFile() will take care of that.</li>
+  </ul>
+  <li>For each MP3 file in a directory, the filename will be of the following form:
+    <ul>
+      <li>artist name</li>
+      <li>a dash (&#39;-&#39;) </li>
+      <li>song title (the song title could contain dashes or dots)</li>
+      <li>&quot;.mp3&quot;  </li>
+    </ul>
+  </li>
+  <li>You must loop using FindFirstFile() and FindNextFile() to find all of the MP3 files in a directory, for each directory. 
+    <ul>
+      <li>Every time you find an MP3 file, you must extract the artist and song title information from the filename and store them in a node of a sorted linked list.
+        <ul>
+          <li>The sorting of the linked list will be ascending by song title. 
+            <ul>
+              <li>In the case of two files with the same song title, the artist will be used to determine which song goes first (in ascending order).</li>
+            </ul>
+          </li>
+          <li>If you do not use a linked list for this part of the assignment, your mark will be 0 and it will not be marked. </li>
+          <li>It is not OK to resort the entire list upon each insertion. Doing this will result in a 50 mark penalty.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Once done with all directories, you must display the artist and title information in a formatted fashion.
+    <ul>
+      <li>This must be done through traversal of the linked list.</li>
+      <li>If the output list contains more than 20 entries, you must display &quot;Press any key to continue&quot; and use _getch() to get a key before displaying the 21st, 41st, 61st, etc. entry.
+        <ul>
+          <li>Do not prompt the user unnecessarily at the end of the list. 
+            <ul>
+              <li>e.g. if there are exactly 40 entries, the user should only be prompted after the 20th entry</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Once completely done, you must free all allocated memory.</li>
+</ul>
+<h2>Other Requirements</h2>
+<ul>
+  <li>Do not get user input except as described in these requirements.</li>
+  <li>Do not clear the screen at any time in this program.</li>
+  <li>You must do error checking where necessary.</li>
+  <li>It must not use global variables.</li>
+  <li>It must not use goto.</li>
+  <li>It must be programmed in C or C++ (your choice).</li>
+  <li>The SET Coding Standards must be adhered to. </li>
+</ul>
+<h2>File Requirements</h2>
+<ul>
+  <li>Call your project dsA1.</li>
+  <li>Call the file with your main() in it dsA1.c or dsA1.cpp.</li>
+  <li>Before submitting, change the filename of dsA1.exe to dsA1.x.</li>
+  <li>Put all source files and dsA1.x into the appropriate eConestoga dropbox when you submit your assignment.<br/>
+  </li>
+</ul>
+<h2>Assumptions / Hints</h2>
+<ul>
+  <li>The artist name will not contain a dash.</li>
+  <li>Any spaces before or after the dash are part of the artist or title..</li>
+  <li>All filenames ending in .mp3 will be of the proper form as described in the requirements.</li>
+  <li>There is no guarantee that the directories specified will actually contain any MP3 files.</li>
+  <li>It is not required that the files actually be valid MP3 music files. The contents are irrelevant.</li>
+  <li>You really do want to do error checking.</li>
+</ul>
+<p>&#160;</p>
+
+
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=10.3.0.791-83 "></script><script type="text/javascript">D2LMathML.DesktopInit('/d2l/common/mathjax/2.1/MathJax.js?config=MML_HTMLorMML','/d2l/common/mathjax/2.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML');</script></body></html>

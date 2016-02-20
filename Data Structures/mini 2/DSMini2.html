@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+</head>
+<body style="font-family: 'PT Sans', sans-serif;">
+<h1>DS Mini-Assignment #2</h1>
+<p>Create a program that stores words in a Hash Table and then searches for the words.</p>
+<h2>Requirements</h2>
+<p>You will keep track of words that are less than 20 characters long.&nbsp; The nodes that you will create as structs will contain an array of char of length 21 and a pointer to a node.&nbsp; Call this struct WordNode.</p>
+<p>In main, declare an array variable to contain your hash table.&nbsp; Let the array buckets contain pointers to WordNodes.&nbsp; The size of the array is 11.&nbsp;</p>
+<p>Create a loop that gets one word at a time from the user until they enter "." as the only thing on the input line.</p>
+<p>Each time you get a word, pass the word as a parameter to the djb2 hash function (from the hash tables lecture).&nbsp; Change the djb2 hash function so it uses the Division Method to return a value between 0 and 10 (inclusive) as a hash value.&nbsp; Use this returned hash value to determine which bucket should contain the word.&nbsp; Then add the word to the bucket as described in lecture. Make sure that your linked lists are sorted linked lists.&nbsp; They do not have to have a tail or prev pointers.</p>
+<p>Once the user is done entering words, set up a separate loop to get input for words to search for.&nbsp; Then search for the words in the hash table by determining the appropriate bucket and searching the linked list found there (if there is one).&nbsp; Every time you do a comparison in your search, use printf() (or cout) to display the word you are comparing your search word against.&nbsp; When you find the word, use printf() (or cout) to display "Success!".&nbsp; If you don't find the word, use printf() (or cout) to display "Not there!".&nbsp; This will continue in a loop until the user enters "." as the only thing on the input line.</p>
+<p>You should comment as normal.</p>
+<h2>Submitting</h2>
+<p>Call your primary source file mini2.c or mini2.cpp.&nbsp; Put your linked list code into linkedList.c or linkedList.cpp (or linkedList.h if you use a class).&nbsp; Put your djb2 hash function into djb2.c or djb2.cpp.&nbsp; Put any other code into your already-existing mini2.c or mini2.cpp. You can create any .h files you need in order to support this.&nbsp; Call your project mini2.exe.</p>
+<p>Hand in your source files and .x (renamed .exe) file into the Mini 2 Dropbox once done.</p>
+<p></p>
+</body>
+</html>
