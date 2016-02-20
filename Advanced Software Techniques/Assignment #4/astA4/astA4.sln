@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "astA4", "astA4\astA4.vcxproj", "{1396BBBB-02D9-4665-8901-50DC89EBC1A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1396BBBB-02D9-4665-8901-50DC89EBC1A9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1396BBBB-02D9-4665-8901-50DC89EBC1A9}.Debug|Win32.Build.0 = Debug|Win32
+		{1396BBBB-02D9-4665-8901-50DC89EBC1A9}.Release|Win32.ActiveCfg = Release|Win32
+		{1396BBBB-02D9-4665-8901-50DC89EBC1A9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
